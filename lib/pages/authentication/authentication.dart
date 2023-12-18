@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_dashboard/constants/controllers.dart';
 import 'package:flutter_web_dashboard/constants/style.dart';
 import 'package:flutter_web_dashboard/routing/routes.dart';
 import 'package:flutter_web_dashboard/widgets/custom_text.dart';
@@ -68,7 +69,7 @@ class AuthenticationPage extends StatelessWidget {
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20))),
               ),
-               const SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Row(
@@ -76,27 +77,26 @@ class AuthenticationPage extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      Checkbox(value: true, onChanged: (value){}),
-                      const CustomText(text: "Remeber Me",),
+                      Checkbox(value: true, onChanged: (value) {}),
+                      const CustomText(
+                        text: "Remeber Me",
+                      ),
                     ],
                   ),
-
-                  const CustomText(
-                    text: "Forgot password?",
-                    color: active
-                  )
+                  const CustomText(text: "Forgot password?", color: active)
                 ],
               ),
-                const SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               InkWell(
-                onTap: (){
+                onTap: () {
                   Get.offAllNamed(rootRoute);
+                  menuController.changeActiveItemTo(overviewPageDisplayName);
                 },
                 child: Container(
-                  decoration: BoxDecoration(color: active, 
-                  borderRadius: BorderRadius.circular(20)),
+                  decoration: BoxDecoration(
+                      color: active, borderRadius: BorderRadius.circular(20)),
                   alignment: Alignment.center,
                   width: double.maxFinite,
                   padding: const EdgeInsets.symmetric(vertical: 16),
@@ -106,18 +106,16 @@ class AuthenticationPage extends StatelessWidget {
                   ),
                 ),
               ),
-
-               const SizedBox(
+              const SizedBox(
                 height: 15,
               ),
-
-              RichText(text: const TextSpan(
-                children: [
-                  TextSpan(text: "Do not have admin credentials? "),
-                  TextSpan(text: "Request Credentials! ", style: TextStyle(color: active))
-                ]
-              ))
-
+              RichText(
+                  text: const TextSpan(children: [
+                TextSpan(text: "Do not have admin credentials? "),
+                TextSpan(
+                    text: "Request Credentials! ",
+                    style: TextStyle(color: active))
+              ]))
             ],
           ),
         ),
