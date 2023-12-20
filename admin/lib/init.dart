@@ -30,6 +30,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
             ListTile(
+              leading: const Icon(Ionicons.chatbox_ellipses),
               title: const Text('Feedback'),
               onTap: () {
                 Navigator.push(
@@ -39,6 +40,7 @@ class HomePage extends StatelessWidget {
               },
             ),
             ListTile(
+              leading: const Icon(Ionicons.list_circle),
               title: const Text('Log'),
               onTap: () {
                 Navigator.push(
@@ -48,6 +50,7 @@ class HomePage extends StatelessWidget {
               },
             ),
             ListTile(
+              leading: const Icon(Ionicons.map),
               title: const Text('Map'),
               onTap: () {
                 Navigator.push(
@@ -57,6 +60,7 @@ class HomePage extends StatelessWidget {
               },
             ),
             ListTile(
+              leading: const Icon(Ionicons.flag),
               title: const Text('Report'),
               onTap: () {
                 Navigator.push(
@@ -66,6 +70,7 @@ class HomePage extends StatelessWidget {
               },
             ),
             ListTile(
+              leading: const Icon(Ionicons.medical),
               title: const Text('Rescue Team'),
               onTap: () {
                 Navigator.push(
