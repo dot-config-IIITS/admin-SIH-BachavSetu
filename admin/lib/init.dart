@@ -3,6 +3,7 @@ import 'package:admin/map/map.dart';
 import 'package:admin/report/report.dart';
 import 'package:admin/updaterescue/rescueteam.dart';
 import 'package:flutter/material.dart';
+import 'package:ionicons/ionicons.dart';
 import './feedback/feedback.dart';
 
 class HomePage extends StatelessWidget {
@@ -66,6 +67,18 @@ class HomePage extends StatelessWidget {
             ),
             ListTile(
               title: const Text('Rescue Team'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => ManageRescueTeamPage()),
+                );
+              },
+            ),
+            ListTile(
+              leading: const Icon(Ionicons.log_out),
+              iconColor: Colors.red,
+              title: const Text('Logout'),
               onTap: () {
                 Navigator.push(
                   context,
