@@ -6,19 +6,19 @@ class FeedbackPage extends StatelessWidget {
     final List<Feedback> feedbacks = [
       // Replace with actual data fetching or API calls
       Feedback(
-          name: 'John Doe',
-          state: 'California',
-          district: 'Los Angeles',
+          name: 'Ashok Kumar',
+          state: 'Andhra Pradeh',
+          district: 'Guntur',
           feedback: 'The app is very helpful!'),
       Feedback(
-          name: 'Jane Smith',
-          state: 'Texas',
-          district: 'Dallas',
+          name: 'Ranjith Kumar',
+          state: 'Tamil Nadu',
+          district: 'Chennai',
           feedback: 'I wish there were more features.'),
       Feedback(
-          name: 'Alex White',
-          state: 'Florida',
-          district: 'Miami',
+          name: 'Sushila Rani',
+          state: 'Telengana',
+          district: 'Hyderabad',
           feedback: 'Overall, a great experience!'),
     ];
 
