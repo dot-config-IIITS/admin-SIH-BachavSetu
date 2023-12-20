@@ -1,21 +1,22 @@
+import 'package:admin/feedback/structure.dart';
 import 'package:flutter/material.dart';
 
 class FeedbackPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final List<Feedback> feedbacks = [
+    final List<Feed> feedbacks = [
       // Replace with actual data fetching or API calls
-      Feedback(
+      Feed(
           name: 'Ashok Kumar',
           state: 'Andhra Pradeh',
           district: 'Guntur',
           feedback: 'The app is very helpful!'),
-      Feedback(
+      Feed(
           name: 'Ranjith Kumar',
           state: 'Tamil Nadu',
           district: 'Chennai',
           feedback: 'I wish there were more features.'),
-      Feedback(
+      Feed(
           name: 'Sushila Rani',
           state: 'Telengana',
           district: 'Hyderabad',
@@ -55,17 +56,4 @@ class FeedbackPage extends StatelessWidget {
       ),
     );
   }
-}
-
-class Feedback {
-  final String name;
-  final String state;
-  final String district;
-  final String feedback;
-
-  Feedback(
-      {required this.name,
-      required this.state,
-      required this.district,
-      required this.feedback});
 }
