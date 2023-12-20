@@ -62,7 +62,7 @@ class _LoginPageState extends State<LoginPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   // App logo or icon
-                  Image.asset('avatar.png'),
+                  Image.asset('assets/abc.png', height: 250.0),
                   const SizedBox(height: 32.0),
                   Text(
                     'Welcome back!',
@@ -230,6 +230,7 @@ class _LoginPageState extends State<LoginPage> {
                       //     }
                       //   });
                       // }
+                      IO.Socket socket = SocketManager.getSocket();
                       Navigator.push(
                         context,
                         MaterialPageRoute(builder: (context) => HomePage()),
